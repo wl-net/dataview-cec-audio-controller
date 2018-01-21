@@ -16,7 +16,7 @@ def handler(a, b, c, d):
   if d == "TV (0): power status changed from 'on' to 'standby'" or d == "TV (0): power status changed from 'unknown' to 'standby'" :
     tv_off()
 
-cec_init()
+cec.init()
 tv_off()  # default
 cec.add_callback(handler, cec.EVENT_ALL)
 
