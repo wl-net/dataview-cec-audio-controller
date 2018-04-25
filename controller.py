@@ -22,4 +22,3 @@ cec.add_callback(handler, cec.EVENT_ALL)
 
 while True:
   sleep(1)
-
